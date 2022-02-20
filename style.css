@@ -1,0 +1,22 @@
+/*
+1.- Posicionamiento
+2.- Modelo de caja
+3.- Tipografía fuentes
+4.- Temas visuales (shadow box, border radius, etc)
+5.- Otros
+*/
+:root {
+    /*Colores ^_^😀*/
+    --orange: #e28525;
+    --light-blue: #016972;
+    --dark-green: #00403f;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
