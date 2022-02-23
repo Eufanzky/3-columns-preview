@@ -10,7 +10,10 @@
     --orange: #e28525;
     --light-blue: #016972;
     --dark-green: #00403f;
+    --cool-background-1: #fefae0;
+    --cool-background-2: #faedcd;
 }
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -20,3 +23,90 @@
 html {
     font-size: 62.5%;
 }
+
+main {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+
+    width: 100vw;
+    height: 1500px;
+    padding: 70px 0px;
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5rem;
+
+    background: linear-gradient(to bottom, var(--cool-background-1), var(--cool-background-2));
+}
+.blocks {
+    display: grid;
+    grid-template-rows: 1fr 1fr 2fr 1fr;
+    align-items: center;
+    justify-items: flex-start;
+
+    width: 80vw;
+    height: 100%;
+    max-width: 330px;
+    padding: 0px 40px;
+
+    color: white;
+}
+
+.block1{
+    background-color: var(--orange);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.block2{
+    background-color: var(--light-blue);
+}
+.block3{
+    background-color: var(--dark-green);
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.blocks__title {
+    font-size: 3rem;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+.blocks__text {
+    font-family: 'Heebo', sans-serif;
+    font-family: 'Open Sans Condensed', sans-serif;
+    line-height: 27px;
+}
+.blocks__botton {
+    width: 70%;
+    height: 40px;
+    margin-bottom: 10px;
+
+    border-radius: 35px;
+    border: none;
+}
+.blocks__botton:hover {
+    cursor: pointer;
+}
+.block1 .blocks__botton {
+    color: var(--orange);
+}
+.block2 .blocks__botton {
+    color: var(--light-blue);
+}
+.block3 .blocks__botton {
+    color: var(--dark-green);
+}
+.block1 .blocks__botton:hover{
+    background-color: black;
+    color: white;
+}
+.block2 .blocks__botton:hover{
+    background-color: black;
+    color: white;
+}
+.block3 .blocks__botton:hover{
+    background-color: black;
+    color: white;
+}
+
